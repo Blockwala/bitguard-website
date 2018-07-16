@@ -3,11 +3,21 @@
 <head>
 <meta charset="utf-8">
 <title>BitGuard</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121967941-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121967941-1');
+</script>
 <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="BitGuard Multipurpose Landing Page Template">
+<meta name="description" content="BitGuard - Safest hardware wallet">
 <meta name="keywords" content="BitGuard HTML Template, BitGuard Landing Page, Landing Page Template">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="icon" type="image/png" href="./images/logo_white.png" sizes="16*16">
 <link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/animate.css">
 <script src="https://scripts.sirv.com/sirv.js"></script>
@@ -35,6 +45,7 @@
             <li><a class="page-scroll" href="#app">App</a></li>
             <li><a class="page-scroll" href="#models">Models</a></li>
             <li><a class="page-scroll" href="#subscribe">Subscribe</a></li>
+            <li><a href="http://www.blockwala.io" target="_blank"><b>Home</b></a></li>
           </ul>
         </div>
       </div>
@@ -53,12 +64,23 @@
             <h1 class="wow fadeInUp" data-wow-delay="0.1s">BIT GUARD</h1>
             <p class="wow fadeInUp" data-wow-delay="0.2s">Introducing BitGuard, a multi coin wallet with best in class security. Your cryptocurrency will never know a safer place.</p>
             <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
-              <form class="subscribe-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
-              <input class="mail" type="email" name="email" placeholder="Subscribe for Pre-Orders" autocomplete="off" id="subemail">
-              <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
-            </form>
+              <form class="subscribe-form wow zoomIn" >
+                <input class="mail" type="email" placeholder="Subscribe for Pre-Orders" autocomplete="on" id="subemail1">
+                <input class="submit-button"  type="button" value="Subscribe" name="send" id="subsubmit" onclick="subscribe1()">
+
+                <script type="text/javascript">
+                function subscribe1() {
+                    var xmlHttp = new XMLHttpRequest();
+                    xmlHttp.open( "GET", "http://wallet.blockwala.io:9000/config/subscribe_user/?email=" + document.getElementById("subemail1").value, true); // false for synchronous request
+                    xmlHttp.send(null);
+                    document.getElementById("subemail1").value = ''
+                    return xmlHttp.responseText;
+                  }
+                </script>
+
+             </form>
               <!-- subscribe message -->
-        <div id="mesaj"></div>
+
         <!-- subscribe message --> 
             </div>
           </div>
@@ -113,7 +135,7 @@
           </div>
         </div>
         <div class="col-md-6 fadeInDown" data-wow-delay="0.5s">
-          <div class="Sirv" data-src="https://agerchiz.sirv.com/Spins/BitGuard/BitGuard.spin"></div>
+          <div class="Sirv" data-src="https://agerchiz.sirv.com/Spins/birguard-2/birguard-2.spin"></div>
        </div>
         <div class="col-md-3 features-left">
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
@@ -145,7 +167,12 @@
 
     <div class="split-features" id="app">
       <div class="col-md-7 nopadding">
-        <div class="split-image"> <img class="img-responsive wow fadeIn" src="images/app_image.png" alt="Image" /> </div>
+        <div class="split-image"  style="text-align:center;"> 
+          <img align="middle" class="img-responsive wow fadeIn" src="images/app_image.png" alt="Image" /> 
+        <div style="margin-left: 60px">
+            <a target="_blank" href='https://play.google.com/store/apps/details?id=com.blockwala.bitguard&utm_source=bitguard-website&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img  width="200" height="70" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+        </div>
+      </div>
       </div>
       <div class="col-md-5 nopadding">
         <div class="split-content">
@@ -154,9 +181,10 @@
           <ul class="wow fadeInUp">
             <li>Safest cryptocurrency app</li>
             <li>Instant transfer of tokens</li>
-            <li>ERC20 token support (under development)</li>
+            <li>ERC20 token support</li>
             <li>Personalized experience</li>
           </ul>
+
         </div>
       </div>
     </div>
@@ -171,7 +199,9 @@
           <ul class="wow fadeInUp">
             <li>Offline storage of tokens (Safest in the world)</li>
             <li>Virtually unbreakable storage </li>
-            <li>Easy pairing with Android, iOS and Desktop</li>
+            <li>Bluetooth pairing on mobile</li>
+            <li>C-type pairing on mobile</li>
+            <li>USB pairing on Desktop</li>
             <li>Interactive UI/UX</li>
           </ul>
         </div>
@@ -332,12 +362,20 @@
           <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address we promise, never disclose<br class="hidden-xs">
              or sell your email address. </p>
           <div class="form wow fadeInUp" data-wow-delay="0.3s">
-            <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
-              <input class="mail" type="email" name="email" placeholder="Subscribe to Pre-Orders" autocomplete="off" id="subemail">
-              <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
+            <form class="subscribe-form center-form wow zoomIn" >
+              <input class="mail" type="email" name="email" placeholder="Subscribe to Pre-Orders" autocomplete="on" id="subemail2">
+              <input class="submit-button" type="button" value="Subscribe" name="send" id="subsubmit" onclick="subscribe()">
+              <script type="text/javascript">
+                  function subscribe() {
+                    var xmlHttp = new XMLHttpRequest();
+                    xmlHttp.open( "GET", "http://wallet.blockwala.io:9000/config/subscribe_user/?email="+document.getElementById("subemail2").value, true); // false for synchronous request
+                    xmlHttp.send(null);
+                    document.getElementById("subemail2").value = ''
+                    return xmlHttp.responseText;
+                  }
+              </script>
             </form>
               <!-- subscribe message -->
-        <div id="mesaj"></div>
         <!-- subscribe message --> 
           </div>
         </div>
@@ -375,7 +413,6 @@
 <!-- Jquery and Js Plugins --> 
 <script type="text/javascript" src="js/jquery-2.1.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="js/plugins.js"></script> 
 <script type="text/javascript" src="js/menu.js"></script> 
 <script type="text/javascript" src="js/custom.js"></script>
