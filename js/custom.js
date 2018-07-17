@@ -18,7 +18,6 @@ jQuery(function($) {
         } else {
             $('.navbar').removeClass('past-main');
        }
-
       });
 
 

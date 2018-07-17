@@ -1,32 +1,19 @@
-jQuery(document).ready(function(){
-	$('#subscribeform').submit(function(){
 
-		var action = $(this).attr('action');
-
-		$("#mesaj").slideUp(750,function() {
-		$('#mesaj').hide();
-
- 		$('#subsubmit')
-			.after('')
-			.attr('disabled','disabled');
-
-		$.post(action, {
-			email: $('#subemail').val()
-		},
-			function(data){
-				document.getElementById('mesaj').innerHTML = data;
-				$('#mesaj').slideDown('slow');
-				$('#subscribeform img.subscribe-loader').fadeOut('slow',function(){$(this).remove()});
-				$('#subsubmit').removeAttr('disabled');
-				if(data.match('success') != null) $('#subscribeform').slideUp('slow');
-
-			}
-		);
-
-		});
-
-		return false;
-
-	});
-
+$(document).ready(function() {
+    var email = $('#subemail');
+    var subsubmit = $('#subsubmit');
+    subsubmit.click(function() {
+     // $.get("http://wallet.blockwala.io:9000/config/subscribe_user/?email="+email, function(data, status) {
+     //     	alert("Data: " + data + "\nStatus: " + status);
+    	// });
+     $.ajax({
+     		var data = new FormData();
+			data.append("email : " , email);
+			console.log(email)
+			var xhr = (window.XMLHttpRequest) ? new XMLHttpRequest() : new activeXObject("Microsoft.XMLHTTP");
+			xhr.open( 'post', 'emails.txt', true );
+			xhr.send(data);
+        });
+    });
 });
+
