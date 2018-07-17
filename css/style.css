@@ -1311,6 +1311,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 
+
 /* --------------- Feature Sub ------------ */
 
 .feature-sub .sub-inner h1 {
@@ -1396,6 +1397,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .app-features .features-left, .app-features .features-right {
 	padding: 50px 0 0 0;
+	z-index: 2;
 }
 
 .app-features .icon {
@@ -1440,6 +1442,13 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	background: #F9F9F9;
 	padding: 50px 0 50px 0;
 	overflow: hidden;
+}
+
+.split-features h1 {
+	font-size: 37px;
+	font-weight: 900;
+	letter-spacing: -2px;
+	margin: 0 0 20px 0;
 }
 
 .signup .split-features {
@@ -1786,7 +1795,7 @@ padding: 120px 10px 50px 350px;
 	font-weight: 300;
 	line-height: 1.4;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .subscribe-form {
@@ -2060,12 +2069,12 @@ font-size: 12px;
 	}
 
 	.form .hero-content {
-		padding: 100px 0 100px 0;
+		padding: 0px 0 0px 0;
 		overflow: hidden;
 	}
 
 	.form .hero-content h1 {
-		font-size: 54px;
+		font-size: 48px;
 	}
 
 	.product .hero-content {
@@ -2075,7 +2084,12 @@ font-size: 12px;
 
 	.hero-content h1 {
 		font-size: 48px;
-		margin: 0 0 20px 0;
+		margin: 0 0 0 0;
+	}
+
+	.hero-content h2 {
+		font-size: 36px;
+		color: #454545;
 	}
 
 	.hero-content p {
