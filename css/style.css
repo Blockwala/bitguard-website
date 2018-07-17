@@ -235,7 +235,7 @@ p {
   }
 
 .navbar-default .navbar-brand {
-	padding-top: 5px;
+	padding-top: 0px;
 	color: #111111;
 	-webkit-transition: 200ms;
 	-moz-transition: 200ms;
@@ -338,7 +338,7 @@ p {
 
   .navbar-default .navbar-brand {
     color: #FFFFFF;
-		padding: 16px 15px !important;
+		padding: 2px 13px !important;
   }
 
 	.navbar-default .navbar-brand.nav-white {
@@ -426,10 +426,25 @@ p {
 	padding: 150px 0 0 0;
 }
 
+@media only screen and (min-width : 601px) {
+	 #headertitle {
+		padding-top: 100px;	
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	 #headertitle {
+		padding-top: 70px;	
+	}
+}
+
 .hero-content {
 	padding: 100px 0 100px 0;
 	overflow: hidden;
 }
+
+
+
 
 .hero-content h1 {
 	font-size: 34px;
@@ -578,7 +593,7 @@ font-family: Arial;
 }
 
 .form .sub-form {
-	padding: 30px 0 0 0;
+	padding: 0 0 0 0;
 	text-align: left;
 }
 
@@ -1373,7 +1388,18 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .app-features {
 	background: #FFFFFF;
-	padding: 100px 0 100px 0;
+}
+
+@media only screen and (min-width : 601px) {
+	 .app-features {
+		padding: 50px 0 50px 0;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	 .app-features {
+		padding: 25px 0 25px 0;	
+	}
 }
 
 .app-features h1 {
@@ -1396,8 +1422,19 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .app-features .features-left, .app-features .features-right {
-	padding: 50px 0 0 0;
 	z-index: 2;
+}
+
+@media only screen and (min-width : 601px) {
+	 .app-features .features-left, .app-features .features-right {
+		padding: 50px 0 0 0;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	 .app-features .features-left, .app-features .features-right {
+		padding: 25px 0 0 0;	
+	}
 }
 
 .app-features .icon {
@@ -1434,6 +1471,8 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 
+
+
 /*-------------------------------------------------------
 ------------- Split Features Section Styling ------------
 --------------------------------------------------------*/
@@ -1457,6 +1496,12 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .split-image img {
 	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+    #appimage {
+        width: 65%;
+    }
 }
 
 .split-content {
@@ -1499,8 +1544,16 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	overflow: hidden;
 }
 
-.second {
-padding: 120px 10px 50px 350px;
+@media screen only and (min-width: 601px) {
+	.second {
+		padding: 120px 10px 50px 350px;
+	}
+}
+
+@media screen only and (max-width: 600px) {
+	.second {
+		padding: 0 0 0 0;
+	}
 }
 
 /*  --------------------------------------------------
@@ -1809,6 +1862,7 @@ padding: 120px 10px 50px 350px;
  background-color: #F9F9F9;
  border: none;
  border-radius: 5px 0 0 5px;
+ margin-bottom: 30px;
  outline: none;
  height: 40px;
  padding: 0 130px 0 20px;
@@ -2274,54 +2328,6 @@ padding: 120px 10px 50px 350px;
 	 }
 
  }
-
-
- /* The snackbar - position it at the bottom and in the middle of the screen */
-#snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
-}
-
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar.show {
-    visibility: visible; /* Show the snackbar */
-
-/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
-However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
-    to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
 
 
 /*---------------------------------------------------
