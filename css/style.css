@@ -235,7 +235,7 @@ p {
   }
 
 .navbar-default .navbar-brand {
-	padding-top: 0px;
+	padding-top: 7px;
 	color: #111111;
 	-webkit-transition: 200ms;
 	-moz-transition: 200ms;
@@ -338,7 +338,7 @@ p {
 
   .navbar-default .navbar-brand {
     color: #FFFFFF;
-		padding: 2px 13px !important;
+		padding: 7px 13px !important;
   }
 
 	.navbar-default .navbar-brand.nav-white {
@@ -1421,13 +1421,19 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	 margin: 0 auto;
 }
 
+@media only screen and (min-width : 992px) {
+	#Sirv {
+		margin-top: 90px;
+	}
+}
+
 .app-features .features-left, .app-features .features-right {
 	z-index: 2;
 }
 
 @media only screen and (min-width : 601px) {
 	 .app-features .features-left, .app-features .features-right {
-		padding: 50px 0 0 0;
+		padding: 0px 0 0 0;
 	}
 }
 
@@ -1440,6 +1446,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .app-features .icon {
 	margin-top: 10px;
 	margin-bottom: 20px;
+	width: 100px;
 }
 
 .app-features .icon i {
@@ -1505,7 +1512,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .split-content {
-	padding: 20px;
+	padding: 20px 50px 20px 50px;
 	text-align: center;
 }
 
@@ -2252,8 +2259,8 @@ padding: 120px 10px 50px 350px;
 	}
 
 	.split-content {
-		padding: 100px 100px 50px 50px;
-		text-align: left;
+		padding: 100px 50px 50px 50px;
+		text-align: center;
 	}
 }
 
