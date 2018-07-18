@@ -55,16 +55,19 @@
   <!-- /.container-fluid -->
 
 
-  <div class="main app form" id="main"><!-- Main Section-->
-    <div class="hero-section">
+  <div class="main app form" style="padding:30px 0px;" id="main"><!-- Main Section-->
+    <div class="hero-section" style="padding:0px 0px 0px 0px">
       <div class="container nopadding">
-        <div class="col-md-8"> <img class=" fadeInUp" style ="" width = "100%" data-wow-delay="0.1s" src="images/app-signup.png" alt="App" /> </div>
-        <div class="col-md-4">
-          <div class="hero-content">
-            <h1 class="wow fadeInUp" data-wow-delay="0.1s">BIT GUARD</h1>
-            <p class="wow fadeInUp" data-wow-delay="0.2s">Introducing BitGuard, a multi coin wallet with best in class security. Your cryptocurrency will never know a safer place.</p>
-            <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
-              <form class="subscribe-form wow zoomIn" >
+        <div class="col-md-12">
+          <div class="hero-content" id="headertitle">
+           <h2 class="wow fadeInUp text-center" data-wow-delay="0.1s">BIT GUARD</h2>
+			<h1 class="wow fadeInUp text-center" data-wow-delay="0.1s">Cryptocurrency Hardware<br>Wallet</h1>
+          </div>
+        </div>
+		<div class="col-md-12"> <img class=" fadeInUp" style ="" width = "100%" data-wow-delay="0.1s" src="images/app-signup.png" alt="App" /> </div>
+		<div class="col-md-12"><p class="wow fadeInUp text-center" style="padding-bottom:40px;" data-wow-delay="0.2s">Introducing BitGuard, a multi coin wallet with best in class security. Your cryptocurrency will never know a safer place.</p></div>
+        <div class="sub-form wow fadeInUp col-md-12" data-wow-delay="0.3s">
+             <form class="subscribe-form wow zoomIn" style="width: fit-content; margin: auto;" >
                 <input class="mail" type="email" placeholder="Subscribe for Pre-Orders" autocomplete="on" id="subemail1">
                 <input class="submit-button"  type="button" value="Subscribe" name="send" id="subsubmit" onclick="subscribe1()">
 
@@ -83,8 +86,6 @@
 
         <!-- subscribe message --> 
             </div>
-          </div>
-        </div>
       </div>
     </div>
     
@@ -103,7 +104,7 @@
     </div> -->
 
 
-    <div class="app-features text-center"  id="features">
+    <div class="app-features text-center" id="features">
       <div class="container">
         <h1 class="wow fadeInDown" data-wow-delay="0.1s">Features</h1>
         <!-- <p class="wow fadeInDown" data-wow-delay="0.2s"> Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est,<br class="hidden-xs">
@@ -111,7 +112,7 @@
 
         <br/>
         <br/>
-        <div class="col-md-3 features-left">
+        <div class="col-md-3 features-left" style="padding-top: 0px;">
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
             <!-- <div class="icon"> <i class="ion-ios-analytics-outline"></i> </div> -->
             <div class="feature-single">
@@ -134,10 +135,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 fadeInDown" data-wow-delay="0.5s">
+        <div class="col-md-6 fadeInDown" data-wow-delay="0.5s" style="z-index: 1;">
           <div class="Sirv" data-src="https://agerchiz.sirv.com/Spins/birguard-2/birguard-2.spin"></div>
        </div>
-        <div class="col-md-3 features-left">
+        <div class="col-md-3 features-right top">
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
             <!-- <div class="icon"> <i class="ion-ios-cloud-download-outline"></i> </div> -->
             <div class="feature-single">
@@ -168,15 +169,15 @@
     <div class="split-features" id="app">
       <div class="col-md-7 nopadding">
         <div class="split-image"  style="text-align:center;"> 
-          <img align="middle" class="img-responsive wow fadeIn" src="images/app_image.png" alt="Image" /> 
-        <div style="margin-left: 60px">
+          <img align="middle" class="img-responsive resize wow fadeIn" src="images/app_image.png" alt="Image" id="appimage"/> 
+        <div>
             <a target="_blank" href='https://play.google.com/store/apps/details?id=com.blockwala.bitguard&utm_source=bitguard-website&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img  width="200" height="70" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
         </div>
       </div>
       </div>
-      <div class="col-md-5 nopadding">
+      <div class="col-md-5 features-right"> 
         <div class="split-content">
-          <h1 class="wow fadeInUp">Android App</h1>
+		<h1>Android App</h1>
           <p class="wow fadeInUp"> Download now at play store!</p>
           <ul class="wow fadeInUp">
             <li>Safest cryptocurrency app</li>
@@ -359,8 +360,8 @@
       <div class="container">
         <div class="cta-inner">
           <h1 class="wow fadeInUp" data-wow-delay="0s">Subscribe and get exclusive offers on our first batch</h1>
-          <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address we promise, never disclose<br class="hidden-xs">
-             or sell your email address. </p>
+          <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address. </p>
+		  <p class="wow fadeInUp" style="color: grey;"> We promise never to disclose or sell your email to third party vendors. </p>
           <div class="form wow fadeInUp" data-wow-delay="0.3s">
             <form class="subscribe-form center-form wow zoomIn" >
               <input class="mail" type="email" name="email" placeholder="Subscribe to Pre-Orders" autocomplete="on" id="subemail2">
