@@ -521,6 +521,21 @@ p {
 	margin: 0 0 20px 0;
 }
 
+@media only screen and (min-width: 601px) {
+	#signupcontainer {
+		padding-top: 120px;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	#mainappimg {
+		width: 60%;
+		margin-left: auto;
+		float: none;
+		display: block;
+	}
+}
+
 
 .software .btn-action {
 font-family: Arial;
@@ -573,6 +588,29 @@ font-family: Arial;
 	margin: 0 auto;
 }
 
+@media only screen and (min-width: 601px) {
+	#signuptexttitle {
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#signuptexttitle {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	#signuptext {
+		width: 430px;
+	}
+}
+
+@media only screen and (max-width: 990) {
+	#signupcontainer {
+		float: none!important;
+	}
+}
 
 .form .hero-content h1 {
 	font-size: 34px;
@@ -924,7 +962,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .app img {
-	margin: 0 auto;
+	margin: 0 0 0 auto;
 }
 
 
@@ -1889,7 +1927,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
  margin-bottom: 30px;
  outline: none;
  height: 40px;
- padding: 0 130px 0 20px;
+ padding: 0 100px 0 20px;
  box-shadow: none;
  -webkit-box-sizing: content-box;
  -moz-box-sizing: content-box;
@@ -2311,6 +2349,19 @@ padding: 120px 10px 50px 350px;
    padding: 0 0 0 0;
    border-radius: 5px 0 0 5px;
  }
+
+@media only screen and (max-width: 990px) {
+	#topsignup {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	#topsignup {
+		margin-right: auto;
+	}
+}
 
  .subscribe-form .submit-button {
    padding: 0 5px 0 5px;

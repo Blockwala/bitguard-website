@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>BitGuard</title>
+<title>BitGuard - Safest Cryptocurrency hardware wallet</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121967941-1"></script>
 <script>
@@ -14,8 +14,8 @@
 </script>
 <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="BitGuard - Safest hardware wallet">
-<meta name="keywords" content="BitGuard HTML Template, BitGuard Landing Page, Landing Page Template">
+<meta name="description" content="Subscribe now to join pre order list for your very own unbreakable hardware wallet.">
+<meta name="keywords" content="hardware wallet, new hardware wallet, cryptocurrency wallets, bitcoin hardware wallet, hd wallet, bitguard hardware wallet, bitguard ">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="icon" type="image/png" href="./images/logo_white.png" sizes="16*16">
 <link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700" rel="stylesheet" type="text/css">
@@ -27,6 +27,13 @@
 <link rel="stylesheet" href="css/ionicons.min.css">
 <!-- Resource style -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <div class="wrapper">
@@ -56,36 +63,46 @@
 
 
   <div class="main app form" style="padding:30px 0px;" id="main"><!-- Main Section-->
-    <div class="hero-section" style="padding:0px 0px 0px 0px">
-      <div class="container nopadding">
-        <div class="col-md-12">
-          <div class="hero-content" id="headertitle">
-           <h2 class="wow fadeInUp text-center" data-wow-delay="0.1s">BIT GUARD</h2>
-			<h1 class="wow fadeInUp text-center" data-wow-delay="0.1s">Cryptocurrency Hardware<br>Wallet</h1>
-          </div>
-        </div>
-		<div class="col-md-12"> <img class=" fadeInUp" width = "100%" data-wow-delay="0.1s" src="images/app-signup.png" alt="App" /> </div>
-		<div class="col-md-12"><p class="wow fadeInUp text-center" style="padding-bottom:40px;" data-wow-delay="0.2s">Introducing BitGuard, a multi coin wallet with best in class security. Your cryptocurrency will never know a safer place.</p></div>
-        <div class="sub-form wow fadeInUp col-md-12" data-wow-delay="0.3s">
-             <form class="subscribe-form wow zoomIn" style="width: fit-content; margin: auto;" >
-                <input class="mail" type="email" placeholder="Subscribe for Pre-Orders" autocomplete="on" id="subemail1">
-                <input class="submit-button"  type="button" value="Subscribe" name="send" id="subsubmit" onclick="subscribe1()">
-
-                <script type="text/javascript">
-                function subscribe1() {
-                    var xmlHttp = new XMLHttpRequest();
-                    xmlHttp.open( "GET", "http://wallet.blockwala.io:9000/config/subscribe_user/?email=" + document.getElementById("subemail1").value, true); // false for synchronous request
-                    xmlHttp.send(null);
-                    document.getElementById("subemail1").value = ''
-                    return xmlHttp.responseText;
-                  }
-                </script>
-
-             </form>
-              <!-- subscribe message -->
-
-        <!-- subscribe message --> 
+    <div class="split-features" id="signupcontainer">
+      <div class="row">
+		<div class="col-sm-12 col-md-6 pull-right"> 
+          <div class="container nopadding" id="signuptexttitle">
+            <div class="col-md-12">
+              <div class="hero-content" id="headertitle">
+                <h1 class="wow fadeInUp" data-wow-delay="0.1s">BIT GUARD</h1>
+              </div>
             </div>
+    		<div class="col-md-12"><p class="wow fadeInUp" style="padding-bottom:40px;" data-wow-delay="0.2s" id="signuptext">Introducing BitGuard, a multi coin wallet with best in class security. Your cryptocurrency will never know a safer place.</p></div>
+ 
+			 </div>
+	
+			
+	    </div>
+		  <div class="col-sm-12 col-md-6">
+		    <div class="col-md-12"> <img class=" fadeInUp" width = "100%" data-wow-delay="0.1s" src="images/app-signup.png" id="mainappimg" alt="App"/> </div>
+		  </div>
+		  <div class="col-sm-12 col-md-6 pull-right" id="signupcontainer">
+		    <div class="sub-form wow fadeInUp col-md-12" data-wow-delay="0.3s">
+               <form class="subscribe-form wow zoomIn text-left" style="width: fit-content;"  id="topsignup">
+                  <input class="mail" type="email" placeholder="Subscribe for Pre-Orders" autocomplete="on" id="subemail1">
+                    <input class="submit-button"  type="button" value="Subscribe" name="send" id="subsubmit" onclick="subscribe1()">
+    
+                    <script type="text/javascript">
+                    function subscribe1() {
+                        var xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open( "GET", "http://wallet.blockwala.io:9000/config/subscribe_user/?email=" + document.getElementById("subemail1").value, true); // false for synchronous request
+                        xmlHttp.send(null);
+                        document.getElementById("subemail1").value = ''
+                        return xmlHttp.responseText;
+                      }
+                    </script>
+    
+               </form>
+                  <!-- subscribe message -->
+               
+            <!-- subscribe message --> 
+             </div>		  
+		  </div>
       </div>
     </div>
     
@@ -117,23 +134,25 @@
             <!-- <div class="icon"> <i class="ion-ios-analytics-outline"></i> </div> -->
             <div class="feature-single">
 			  <img class="icon" src="images/multicurrency.png"/>
-              <h1>Multi Currency Wallet</h1>
+              <h4>Multi Currency Wallet</h4>
               <p>Support for all major cryptocurrencies.</p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
             <!-- <div class="icon"> <i class="ion-ios-briefcase-outline"></i> </div> -->
             <div class="feature-single">
+
 			  <img class="icon" src="images/HD wallet.png"/>
-              <h1>HD Wallet Support</h1>
+              <h5>HD Wallet Support</h5>
               <p> Single Mnemonic to unlock all your cryptos.</p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
             <!-- <div class="icon"> <i class="ion-ios-chatboxes-outline"></i> </div> -->
             <div class="feature-single">
+
 			  <img class="icon" src="images/bluetooth.png"/>
-              <h1>Bluetooth Connection</h1>
+              <h6>Bluetooth Connection</h6>
               <p>Freedom to pair and transact with any device.</p>
             </div>
           </div>
@@ -145,24 +164,24 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
             <!-- <div class="icon"> <i class="ion-ios-cloud-download-outline"></i> </div> -->
             <div class="feature-single">
-			  <img class="icon" src="images/usb c.png"/>
-              <h1>Type C Connection</h1>
+			        <img class="icon" src="images/usb c.png"/>
+              <h2>Type C Connection</h2>
               <p>Freedom to dock the wallet anywhere</p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
             <!-- <div class="icon"> <i class="ion-ios-copy-outline"></i> </div> -->
             <div class="feature-single">
-			  <img class="icon" src="images/secure.png"/>
-              <h1>Unbreakable Vault</h1>
+			        <img class="icon" src="images/secure.png"/>
+              <h2>Unbreakable Vault</h2>
               <p>3 layer protection for your tokens.</p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
             <!-- <div class="icon"> <i class="ion-ios-game-controller-b-outline"></i> </div> -->
             <div class="feature-single">
-			  <img class="icon" src="images/3rd party.png"/>
-              <h1>Vendor Support</h1>
+			        <img class="icon" src="images/3rd party.png"/>
+              <h2>Vendor Support</h2>
               <p>3rd party integrations with developer documentations</p>
             </div>
           </div>
@@ -219,7 +238,7 @@
         </div>
 		<div class="col-md-5 features-right"> 
         <div class="split-content">
-		<h1>Android App</h1>
+		      <h1>Android App</h1>
           <p class="wow fadeInUp"> Download now at play store!</p>
           <ul class="wow fadeInUp">
             <li>Safest cryptocurrency app</li>
@@ -448,9 +467,15 @@
       <div class="container">
         <div class="cta-inner">
           <h1 class="wow fadeInUp" data-wow-delay="0s">Subscribe and get exclusive offers on our first batch</h1>
+<<<<<<< HEAD
           <p class="wow fadeInUp" data-wow-delay="0.1s"> Enter your email address. </p>
 		  <p class="wow fadeInUp" style="color: #919191;"> We promise never to disclose or sell your email to third party vendors. </p>
           <div class="form wow fadeInUp" data-wow-delay="0.1s">
+=======
+          <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address. </p>
+		      <p class="wow fadeInUp" style="color: grey;"> We promise never to disclose or sell your email to third party vendors. </p>
+          <div class="form wow fadeInUp" data-wow-delay="0.3s">
+>>>>>>> 7fa614c122e5d1d34aad16cbfc06a4b4414aeffb
             <form class="subscribe-form center-form wow zoomIn" >
               <input class="mail" type="email" name="email" placeholder="Subscribe to Pre-Orders" autocomplete="on" id="subemail2">
               <input class="submit-button" type="button" value="Subscribe" name="send" id="subsubmit" onclick="subscribe()">
@@ -481,7 +506,7 @@
           </div>
         </div>
         <div class="col-md-5">
-            <h1>Contact Us</h1>
+            <h13>Contact Us</h13>
             <p> +91-9953617447 </p>
             <a href="mailto:support@gmail.com">info@blockwala.io</a> </div>
         </div>
