@@ -426,15 +426,15 @@ p {
 	padding: 150px 0 0 0;
 }
 
-@media only screen and (min-width : 601px) {
+@media only screen and (min-width : 991px) {
 	 #headertitle {
 		padding-top: 100px;	
 	}
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 990px) {
 	 #headertitle {
-		padding-top: 70px;	
+		padding-top: 0px;	
 	}
 }
 
@@ -521,18 +521,29 @@ p {
 	margin: 0 0 20px 0;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
 	#signupcontainer {
 		padding-top: 120px;
+	}
+
+	#mainappimg {
+		margin-left: auto;
+		float: none;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	#mainappimg {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 }
 
 @media only screen and (min-width: 601px) {
 	#mainappimg {
 		width: 60%;
-		margin-left: auto;
-		float: none;
-		display: block;
 	}
 }
 
@@ -588,13 +599,13 @@ font-family: Arial;
 	margin: 0 auto;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 991px) {
 	#signuptexttitle {
 		text-align: left;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
 	#signuptexttitle {
 		text-align: center;
 	}
@@ -1545,13 +1556,13 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 @media only screen and (min-width: 601px) {
 	#myCarousel {
-		width: 60%;
+		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	
 	#myCarousel2 {
-		width: 60%;
+		width: 50%;
 	}
 
 }
@@ -1916,12 +1927,21 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .subscribe-form {
 	text-align: left;
 }
+
+@media only screen and (max-width:990px) {
+	.subscribe-form {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
 .center-form {
 	text-align: center;
 }
 
 .subscribe-form .mail {
- background-color: #F9F9F9;
+ background-color: #eeeeee;
  border: none;
  border-radius: 5px 0 0 5px;
  margin-bottom: 30px;
@@ -2352,8 +2372,8 @@ padding: 120px 10px 50px 350px;
 
 @media only screen and (max-width: 990px) {
 	#topsignup {
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: auto!important;
+		margin-right: auto!important;
 	}
 }
 
