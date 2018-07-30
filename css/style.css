@@ -2136,7 +2136,7 @@ font-size: 12px;
 	margin: 0;
 	position: fixed;
 	bottom: 30px;
-	right: 30px;
+	right: 100px;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
@@ -2178,6 +2178,27 @@ font-size: 12px;
 
 .product .back-to-top:hover {
 	background: rgba(146, 127, 84, 0.9);
+}
+
+/* -------------------------------------------------------
+----------- Telegram Channel --------------
+---------------------------------------------------------*/
+
+
+.telegram-float {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.telegram-float img {
+	width: 50px;
+}
+
+.telegram-float:hover {
+    transform: scale(1.2, 1.2); /** default is 1, scale it to 1.5 */
+    opacity: 1;
 }
 
 
@@ -2409,6 +2430,8 @@ padding: 120px 10px 50px 350px;
  .back-to-top {
 	right: 10px;
 }
+
+
 
  }
 
