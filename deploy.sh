@@ -15,5 +15,5 @@ echo "S3 Upload complete"
 echo "Invalidating cloudfrond distribution to get fresh cache"
 
 echo "Deployment complete"  
-aws cloudfront create-invalidation --distribution-id=EWTXS4BFZA43K --paths /
+aws cloudfront create-invalidation --distribution-id=EWTXS4BFZA43K --paths "/*"
 echo "deleted cache"
